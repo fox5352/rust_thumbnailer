@@ -5,7 +5,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
-    "name": "rust-adder",
+    "name": "rust_thumbnailer",
     "triples": {
       "defaults": true,
       "additional": [
@@ -38,7 +38,8 @@
     "rust",
     "nodejs",
     "napi-rs",
-    "math"
+    "image",
+    "thumbnail"
   ],
   "optionalDependencies": {
     "rust_thumbnailer-win32-x64-msvc": "1.0.0",

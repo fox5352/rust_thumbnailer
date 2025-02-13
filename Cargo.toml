@@ -5,6 +5,7 @@ edition = "2021"
 
 [lib]
 crate-type = ["cdylib"]
+name = "rust_thumbnailer"  # This is important
 
 [dependencies]
 image = "0.25.5"
