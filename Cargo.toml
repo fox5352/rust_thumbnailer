@@ -1,8 +1,16 @@
 [package]
-name = "rust_thumbnail_gen"
+name = "rust_thumbnailer"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
 image = "0.25.5"
-wasm-bindgen = "0.2"
+napi = "2.13.3"
+napi-derive = "2.13.0"
+
+
+[build-dependencies]
+napi-build = "2.0.1"

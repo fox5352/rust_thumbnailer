@@ -1,0 +1,42 @@
+{
+  "name": "@fox5352/rust_thumbnailer",
+  "version": "1.0.0",
+  "description": "A simple thumbnail generator library implemented in Rust",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "napi": {
+    "name": "rust-adder",
+    "triples": {
+      "defaults": true,
+      "additional": [
+        "x86_64-apple-darwin",
+        "x86_64-pc-windows-msvc",
+        "x86_64-unknown-linux-gnu"
+      ]
+    }
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@napi-rs/cli": "^2.16.5"
+  },
+  "engines": {
+    "node": ">= 14"
+  },
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform",
+    "prepublishOnly": "napi prepublish -t npm",
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "rust",
+    "nodejs",
+    "napi-rs",
+    "math"
+  ]
+}
