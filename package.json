@@ -1,5 +1,5 @@
 {
-  "name": "@fox5352/rust_thumbnailer",
+  "name": "rust_thumbnailer",
   "version": "1.0.0",
   "description": "A simple thumbnail generator library implemented in Rust",
   "main": "index.js",
@@ -25,6 +25,7 @@
   "scripts": {
     "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
+    "build:release": "napi build --release",
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
     "test": "node test.js"
@@ -38,5 +39,10 @@
     "nodejs",
     "napi-rs",
     "math"
-  ]
+  ],
+  "optionalDependencies": {
+    "rust_thumbnailer-win32-x64-msvc": "1.0.0",
+    "rust_thumbnailer-darwin-x64": "1.0.0",
+    "rust_thumbnailer-linux-x64-gnu": "1.0.0"
+  }
 }
